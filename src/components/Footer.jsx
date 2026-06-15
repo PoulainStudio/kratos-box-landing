@@ -1,14 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+import logoImg from '../assets/kratosbox-logoprincipal.jpg';
 import '../styles/footer.css';
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-logo">
-          <span className="helmet-icon">⚔️</span>
+        <Link to="/" className="footer-logo">
+          <img src={logoImg} alt="KratosBox" className="footer-logo-image" />
           <span>KRATOSBOX</span>
-        </div>
+        </Link>
 
         <p className="footer-text">© 2026 KratosBox. Forjado en Zona Oeste.</p>
 

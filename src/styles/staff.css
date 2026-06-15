@@ -108,6 +108,19 @@
   padding: 2rem;
 }
 
+.staff-badge {
+  display: inline-block;
+  margin-bottom: 1rem;
+  padding: 0.35rem 0.8rem;
+  background: rgba(128, 0, 0, 0.18);
+  border: 1px solid rgba(128, 0, 0, 0.5);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
 .staff-info h3 {
   font-family: 'Anton', sans-serif;
   font-size: 1.5rem;
@@ -118,19 +131,37 @@
 }
 
 .role {
-  color: var(--bordo);
+  color: #f0d9d9;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  font-size: 0.95rem;
-  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.92rem;
   margin-bottom: 1rem;
-  letter-spacing: 1px;
+  line-height: 1.7;
 }
 
 .description {
   color: var(--light-gray);
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.staff-specialties {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.staff-specialties li {
+  padding: 0.45rem 0.75rem;
+  border: 1px solid #3a3a3a;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--white);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /* Responsive */
@@ -185,5 +216,9 @@
 
   .description {
     font-size: 0.85rem;
+  }
+
+  .staff-specialties {
+    gap: 0.5rem;
   }
 }

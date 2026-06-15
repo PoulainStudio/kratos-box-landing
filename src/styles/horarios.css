@@ -6,13 +6,16 @@
 }
 
 .horarios::before {
-  content: '⚔️';
+  content: '';
   position: absolute;
   top: 50%;
   left: -5%;
-  transform: translateY(-50%) rotate(-30deg);
-  font-size: 18rem;
-  opacity: 0.03;
+  transform: translateY(-50%);
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(128, 0, 0, 0.08) 0%, transparent 70%);
+  opacity: 1;
   pointer-events: none;
   z-index: 0;
 }

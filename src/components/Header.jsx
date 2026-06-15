@@ -1,50 +1,41 @@
 import React, { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import logoImg from '../assets/kratosbox-logoprincipal.jpg';
 import '../styles/header.css';
 
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const handleSmoothScroll = (e, targetId) => {
-    e.preventDefault();
-    const element = document.getElementById(targetId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-      setIsMenuOpen(false);
-    }
-  };
+  const closeMenu = () => setIsMenuOpen(false);
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const navLinkClass = ({ isActive }) =>
+    isActive ? 'nav-link active' : 'nav-link';
 
   return (
     <header className="header">
       <div className="header-container">
-        <div className="logo">
-          <div className="spartan-helmet">⚔️</div>
+        <Link to="/" className="logo" onClick={closeMenu}>
+          <img src={logoImg} alt="KratosBox" className="logo-image" />
           <span className="logo-text">KRATOSBOX</span>
-        </div>
+        </Link>
 
-        <button className="menu-toggle" onClick={toggleMenu}>
+        <button className="menu-toggle" onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Menú">
           <span></span>
           <span></span>
           <span></span>
         </button>
 
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
-          <a href="#inicio" onClick={(e) => handleSmoothScroll(e, 'hero')}>Inicio</a>
-          <a href="#nosotros" onClick={(e) => handleSmoothScroll(e, 'info')}>Nosotros</a>
-          <a href="#precios" onClick={(e) => handleSmoothScroll(e, 'pricing')}>Precios</a>
-          <a href="#staff" onClick={(e) => handleSmoothScroll(e, 'staff')}>Staff</a>
-          <a href="#contacto" onClick={(e) => handleSmoothScroll(e, 'contact')}>Contacto</a>
+          <Link to="/" className="nav-link" onClick={closeMenu}>Inicio</Link>
+          <Link to="/#info" className="nav-link" onClick={closeMenu}>Nosotros</Link>
+          <Link to="/#pricing" className="nav-link" onClick={closeMenu}>Precios</Link>
+          <NavLink to="/coaches" className={navLinkClass} onClick={closeMenu}>Coaches</NavLink>
+          <NavLink to="/contacto" className={navLinkClass} onClick={closeMenu}>Contacto</NavLink>
         </nav>
 
-        <button 
-          className="cta-button"
-          onClick={() => handleSmoothScroll({ preventDefault: () => {} }, 'contact')}
-        >
+        <Link to="/contacto" className="cta-button" onClick={closeMenu}>
           Inscribirme
-        </button>
+        </Link>
       </div>
     </header>
   );

@@ -23,23 +23,23 @@
 }
 
 .hero::after {
-  content: '⚔️';
+  content: '';
   position: absolute;
   top: 10%;
   right: 5%;
-  font-size: 15rem;
-  opacity: 0.05;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(128, 0, 0, 0.08) 0%, transparent 70%);
   pointer-events: none;
-  transform: rotate(15deg);
   animation: float 6s ease-in-out infinite;
 }
 
 @keyframes float {
   0%, 100% {
-    transform: rotate(15deg) translateY(0);
+    transform: translateY(0);
   }
   50% {
-    transform: rotate(15deg) translateY(-20px);
+    transform: translateY(-20px);
   }
 }
 
@@ -148,7 +148,8 @@
   }
 
   .hero::after {
-    font-size: 10rem;
+    width: 250px;
+    height: 250px;
     right: 2%;
   }
 }
@@ -175,9 +176,10 @@
   }
 
   .hero::after {
-    font-size: 8rem;
+    width: 200px;
+    height: 200px;
     right: 1%;
-    opacity: 0.02;
+    opacity: 0.5;
   }
 }
 
