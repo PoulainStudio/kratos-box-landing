@@ -7,10 +7,6 @@
   overflow: hidden;
   padding: 2rem 1rem;
   background-color: #1a1a1a;
-  background-image: url('/kratos.png');
-  background-size: clamp(260px, 45vw, 520px) clamp(260px, 45vw, 520px);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .hero-overlay {
@@ -118,7 +114,6 @@
 @media (max-width: 768px) {
   .hero {
     padding: 1.5rem 0.75rem;
-    background-size: clamp(220px, 55vw, 360px) clamp(220px, 55vw, 360px);
   }
 
   .hero-content {
@@ -154,7 +149,6 @@
   .hero {
     min-height: 80vh;
     padding: 1rem 0.75rem;
-    background-size: clamp(180px, 62vw, 280px) clamp(180px, 62vw, 280px);
   }
 
   .hero-title {
