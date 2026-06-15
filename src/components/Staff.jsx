@@ -35,7 +35,7 @@ function Staff() {
   return (
     <section className="staff" id="staff">
       <div className="staff-container">
-        <h2>NUESTRO STAFF</h2>
+        <h2>NUESTRO <span className="accent">STAFF</span></h2>
 
         <div className="staff-grid">
           {coaches.map(coach => (

@@ -8,9 +8,9 @@ function Pricing() {
   return (
     <section className="pricing" id="pricing">
       <div className="pricing-container">
-        <h2>ELEGÍ TU SISTEMA DE ENTRENAMIENTO</h2>
+        <h2>ELEGÍ TU SISTEMA DE <span className="accent">ENTRENAMIENTO</span></h2>
         <p className="pricing-intro">
-          Dos formas de entrenar en KratosBox, una misma exigencia: progresar con método, técnica y constancia.
+          Dos formas de entrenar en KratosBox, una misma exigencia: progresar con método, técnica y constancia dentro de un entorno hecho para levantar pesado.
         </p>
 
         <div className="pricing-grid">
@@ -21,10 +21,10 @@ function Pricing() {
             </div>
             
             <ul className="features">
-              <li>✓ Acceso completo al gimnasio</li>
-              <li>✓ Uso de equipamiento de competición</li>
-              <li>✓ Planificación general para fuerza</li>
-              <li>✓ Acompañamiento en el entorno de entrenamiento</li>
+              <li>Acceso completo al gimnasio</li>
+              <li>Uso de equipamiento de competición</li>
+              <li>Planificación general para fuerza</li>
+              <li>Acompañamiento en el entorno de entrenamiento</li>
             </ul>
 
             <Link to="/contacto" className="select-button">
@@ -33,21 +33,21 @@ function Pricing() {
           </div>
 
           <div className="pricing-card premium">
-            <div className="premium-badge">RECOMENDADO</div>
+            <div className="premium-badge">MÉTODO KRATOS</div>
             
             <div className="card-header">
-              <h3>Plan Método Kratos</h3>
+              <h3>Plan Premium</h3>
               <div className="price">$80.000<span>/mes</span></div>
             </div>
             
             <ul className="features">
-              <li>✓ Acceso completo al gimnasio</li>
-              <li>✓ Uso de equipamiento de competición</li>
-              <li>✓ Planificación personalizada de fuerza</li>
-              <li>✓ Seguimiento técnico avanzado</li>
-              <li>✓ Ajuste de cargas según progreso</li>
-              <li>✓ Estrategia de competencia y picos de rendimiento</li>
-              <li>✓ Nutrición orientada al rendimiento (opcional)</li>
+              <li>Acceso completo al gimnasio</li>
+              <li>Uso de equipamiento de competición</li>
+              <li>Planificación personalizada de fuerza</li>
+              <li>Seguimiento técnico avanzado</li>
+              <li>Ajuste de cargas según progreso</li>
+              <li>Estrategia de competencia y picos de rendimiento</li>
+              <li>Nutrición orientada al rendimiento (opcional)</li>
             </ul>
 
             <button
@@ -65,11 +65,9 @@ function Pricing() {
 
         <div className="pricing-cta">
           <p className="pricing-cta-text">
-            Querés conocer quién va a acompañarte en el proceso, corregir tu técnica y llevar tu progreso al siguiente nivel.
+            Debajo encontrás al equipo técnico que sostiene cada proceso, corrige cada detalle y justifica el valor de cada plan.
           </p>
-          <Link to="/coaches" className="coaches-cta-button">
-            Conocé a nuestros Coaches
-          </Link>
+          <a href="#staff" className="coaches-cta-button">Ver Staff Técnico</a>
         </div>
       </div>
 
@@ -78,25 +76,31 @@ function Pricing() {
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-button" onClick={() => setShowModal(false)}>✕</button>
             
-            <h2>¿Qué es el Método Kratos?</h2>
+            <h2>MÉTODO <span className="accent">KRATOS</span></h2>
             
             <div className="modal-body">
               <div className="method-step">
                 <div className="step-number">1</div>
-                <h3>Plantear un Objetivo Claro</h3>
-                <p>Definimos metas concretas según tu nivel, tus marcas actuales y el tipo de atleta que querés construir.</p>
+                <div>
+                  <h3>Plantear un Objetivo Claro</h3>
+                  <p>Definimos metas concretas según tu nivel, tus marcas actuales y el tipo de atleta que querés construir.</p>
+                </div>
               </div>
 
               <div className="method-step">
                 <div className="step-number">2</div>
-                <h3>Estructurar la Organización Total</h3>
-                <p>Ordenamos entrenamiento, volumen, intensidad, recuperación y hábitos para que cada fase tenga un propósito real.</p>
+                <div>
+                  <h3>Estructurar la Organización Total</h3>
+                  <p>Ordenamos entrenamiento, volumen, intensidad, recuperación y hábitos para que cada fase tenga un propósito real.</p>
+                </div>
               </div>
 
               <div className="method-step">
                 <div className="step-number">3</div>
-                <h3>Disciplina Espartana en la Ejecución</h3>
-                <p>Ejecutás con rigor y seguimiento técnico constante. El plan se adapta a tu progreso sin perder la exigencia del proceso.</p>
+                <div>
+                  <h3>Disciplina Espartana en la Ejecución</h3>
+                  <p>Ejecutás con rigor y seguimiento técnico constante. El plan se adapta a tu progreso sin perder la exigencia del proceso.</p>
+                </div>
               </div>
             </div>
 

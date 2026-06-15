@@ -28,13 +28,12 @@ function Header() {
         <nav className={`nav ${isMenuOpen ? 'active' : ''}`}>
           <Link to="/" className="nav-link" onClick={closeMenu}>Inicio</Link>
           <Link to="/#info" className="nav-link" onClick={closeMenu}>Nosotros</Link>
-          <Link to="/#pricing" className="nav-link" onClick={closeMenu}>Precios</Link>
-          <NavLink to="/coaches" className={navLinkClass} onClick={closeMenu}>Coaches</NavLink>
+          <NavLink to="/suscripciones" className={navLinkClass} onClick={closeMenu}>Suscripciones</NavLink>
           <NavLink to="/contacto" className={navLinkClass} onClick={closeMenu}>Contacto</NavLink>
         </nav>
 
         <Link to="/contacto" className="cta-button" onClick={closeMenu}>
-          Inscribirme
+          Quiero Entrenar
         </Link>
       </div>
     </header>
