@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logoImg from '../../kratos.png';
 import '../styles/footer.css';
 
 function Footer() {
@@ -7,7 +8,7 @@ function Footer() {
     <footer className="footer">
       <div className="footer-container">
         <Link to="/" className="footer-logo">
-          <img src="/kratos.png" alt="KratosBox" className="footer-logo-image" />
+          <img src={logoImg} alt="KratosBox" className="footer-logo-image" />
           <span>KRATOSBOX</span>
         </Link>
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
+import logoImg from '../../kratos.png';
 import '../styles/header.css';
 
 function Header() {
@@ -14,7 +15,7 @@ function Header() {
     <header className="header">
       <div className="header-container">
         <Link to="/" className="logo" onClick={closeMenu}>
-          <img src="/kratos.png" alt="KratosBox" className="logo-image" />
+          <img src={logoImg} alt="KratosBox" className="logo-image" />
           <span className="logo-text">KRATOSBOX</span>
         </Link>
 
