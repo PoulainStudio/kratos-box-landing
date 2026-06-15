@@ -133,8 +133,9 @@ function Contact() {
                   aria-invalid={Boolean(errors.plan)}
                 >
                   <option value="">Elegí un plan de interes</option>
-                  <option value="estandar">Plan Estandar</option>
-                  <option value="metodo-kratos">Plan Metodo Kratos</option>
+                  <option value="gym-personalizado">GYM PERSONALIZADO ($60.000)</option>
+                  <option value="pase-libre">PASE LIBRE ($70.000)</option>
+                  <option value="coaching-full">COACHING FULL ($80.000)</option>
                 </select>
                 {errors.plan && <span className="field-error">{errors.plan}</span>}
               </div>
@@ -172,7 +173,7 @@ function Contact() {
 
               <div className="info-item">
                 <span className="label">Instagram:</span>
-                <a href="https://instagram.com/kratosbox" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.instagram.com/kratosbox/" target="_blank" rel="noopener noreferrer">
                   @kratosbox
                 </a>
               </div>
@@ -189,7 +190,7 @@ function Contact() {
 
               <div className="social-links">
                 <h4>Seguinos</h4>
-                <a href="https://instagram.com/kratosbox" target="_blank" rel="noopener noreferrer" className="social-icon">
+                <a href="https://www.instagram.com/kratosbox/" target="_blank" rel="noopener noreferrer" className="social-icon">
                   Instagram
                 </a>
                 <a

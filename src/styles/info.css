@@ -156,3 +156,40 @@
     font-size: 1.3rem;
   }
 }
+
+@media (max-width: 768px) {
+  .info {
+    padding-inline: 0.75rem;
+  }
+
+  .info-container > h2 {
+    margin-bottom: 2rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .info-item,
+  .founder-story {
+    min-width: 0;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8);
+  }
+
+  .info-item h3,
+  .founder-story-header h3 {
+    letter-spacing: 1px;
+  }
+
+  .founder-advice {
+    padding: 1rem 1rem 1rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .info {
+    padding-inline: 0.5rem;
+  }
+}

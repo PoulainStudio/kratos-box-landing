@@ -132,3 +132,34 @@
     font-size: 1.2rem;
   }
 }
+
+@media (max-width: 768px) {
+  .location {
+    padding-inline: 0.75rem;
+  }
+
+  .location-content {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1rem;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.8);
+  }
+
+  .location-heading h2,
+  .location-info h3 {
+    letter-spacing: 1px;
+  }
+
+  .location-link {
+    width: 100%;
+    text-align: center;
+    padding: 0.9rem 1rem;
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .location {
+    padding-inline: 0.5rem;
+  }
+}

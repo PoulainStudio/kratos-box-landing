@@ -386,3 +386,95 @@
     gap: 1rem;
   }
 }
+
+@media (max-width: 768px) {
+  .pricing {
+    padding-inline: 0.75rem;
+  }
+
+  .pricing-container {
+    overflow: visible;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  .pricing-card,
+  .pricing-card.premium {
+    width: 100%;
+    min-width: 0;
+    max-width: 100%;
+    padding: 1.5rem;
+    transform: none;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.85);
+  }
+
+  .pricing-card:hover,
+  .pricing-card.premium:hover {
+    transform: none;
+  }
+
+  .pricing-card.premium {
+    box-shadow: 0 0 24px rgba(204, 0, 0, 0.18), 8px 8px 0 rgba(204, 0, 0, 0.28);
+  }
+
+  .premium-badge {
+    position: static;
+    display: inline-block;
+    transform: none;
+    margin-bottom: 1rem;
+  }
+
+  .card-header h3 {
+    font-size: clamp(1.3rem, 5vw, 1.5rem);
+    letter-spacing: 1px;
+  }
+
+  .price {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+
+  .select-button,
+  .premium .select-button {
+    padding: 0.95rem 1rem;
+    letter-spacing: 1px;
+    box-shadow: 3px 3px 0 var(--white);
+  }
+
+  .modal-content {
+    width: calc(100% - 1.5rem);
+    padding: 1.5rem;
+    box-shadow: 8px 8px 0 rgba(204, 0, 0, 0.25);
+  }
+
+  .modal-content h2 {
+    font-size: clamp(1.5rem, 7vw, 2rem);
+    padding-right: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing {
+    padding-inline: 0.5rem;
+  }
+
+  .pricing-card,
+  .pricing-card.premium {
+    padding: 1.25rem;
+  }
+
+  .features li {
+    font-size: 0.9rem;
+  }
+
+  .close-button {
+    top: 1rem;
+    right: 1rem;
+    width: 34px;
+    height: 34px;
+    font-size: 1.4rem;
+  }
+}

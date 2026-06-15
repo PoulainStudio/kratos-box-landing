@@ -8,46 +8,69 @@ function Pricing() {
   return (
     <section className="pricing" id="pricing">
       <div className="pricing-container">
-        <h2>ELEGÍ TU SISTEMA DE <span className="accent">ENTRENAMIENTO</span></h2>
+        <h2>ELEGÍ TU <span className="accent">PLAN</span></h2>
         <p className="pricing-intro">
-          Dos formas de entrenar en KratosBox, una misma exigencia: progresar con método, técnica y constancia dentro de un entorno hecho para levantar pesado.
+          Tres formas de entrenar en KratosBox, una misma exigencia: progresar con método, técnica y constancia.
         </p>
 
         <div className="pricing-grid">
+          {/* Card 1: GYM PERSONALIZADO */}
           <div className="pricing-card">
             <div className="card-header">
-              <h3>Plan Estándar</h3>
+              <h3>GYM PERSONALIZADO</h3>
               <div className="price">$60.000<span>/mes</span></div>
             </div>
             
             <ul className="features">
-              <li>Acceso completo al gimnasio</li>
-              <li>Uso de equipamiento de competición</li>
-              <li>Planificación general para fuerza</li>
-              <li>Acompañamiento en el entorno de entrenamiento</li>
+              <li>Venís las veces que quieras.</li>
+              <li>Rutina personalizada del día a día.</li>
+              <li>El profe te la arma según tu entrenamiento.</li>
+              <li>Apto para principiantes y avanzados.</li>
+              <li>Seguimiento simple, práctico y adaptado a vos.</li>
             </ul>
 
             <Link to="/contacto" className="select-button">
-              Seleccionar
+              Seleccionar Plan
             </Link>
           </div>
 
+          {/* Card 2: PASE LIBRE */}
+          <div className="pricing-card">
+            <div className="card-header">
+              <h3>PASE LIBRE</h3>
+              <div className="price">$70.000<span>/mes</span></div>
+            </div>
+            
+            <ul className="features">
+              <li>Entrená libre con tu rutina y tu seguimiento.</li>
+              <li>Acceso ilimitado al gimnasio.</li>
+              <li>Discos y barras de competencia.</li>
+              <li>Espacio especializado en fuerza.</li>
+              <li>Apto para avanzados y con experiencia. Ideal si ya tenés entrenador o rutina propia.</li>
+            </ul>
+
+            <Link to="/contacto" className="select-button">
+              Seleccionar Plan
+            </Link>
+          </div>
+
+          {/* Card 3: COACHING FULL [RECOMENDADO] */}
           <div className="pricing-card premium">
-            <div className="premium-badge">MÉTODO KRATOS</div>
+            <div className="premium-badge">RECOMENDADO</div>
             
             <div className="card-header">
-              <h3>Plan Premium</h3>
+              <h3>COACHING FULL</h3>
               <div className="price">$80.000<span>/mes</span></div>
             </div>
             
             <ul className="features">
-              <li>Acceso completo al gimnasio</li>
-              <li>Uso de equipamiento de competición</li>
-              <li>Planificación personalizada de fuerza</li>
-              <li>Seguimiento técnico avanzado</li>
-              <li>Ajuste de cargas según progreso</li>
-              <li>Estrategia de competencia y picos de rendimiento</li>
-              <li>Nutrición orientada al rendimiento (opcional)</li>
+              <li>Entrenamiento 100% personalizado y seguimiento profundo.</li>
+              <li>Método Kratos.</li>
+              <li>Plan pensado según tus objetivos.</li>
+              <li>Corrección técnica constante.</li>
+              <li>Seguimiento detallado y evolución real.</li>
+              <li>Elegís con qué entrenador de Kratos querés trabajar.</li>
+              <li>Apto para principiantes y avanzados. Ideal si querés resultados serios y un proceso completo.</li>
             </ul>
 
             <button
@@ -58,16 +81,9 @@ function Pricing() {
             </button>
 
             <Link to="/contacto" className="select-button">
-              Seleccionar
+              Seleccionar Plan
             </Link>
           </div>
-        </div>
-
-        <div className="pricing-cta">
-          <p className="pricing-cta-text">
-            Debajo encontrás al equipo técnico que sostiene cada proceso, corrige cada detalle y justifica el valor de cada plan.
-          </p>
-          <a href="#staff" className="coaches-cta-button">Ver Staff Técnico</a>
         </div>
       </div>
 

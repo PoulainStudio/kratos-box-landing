@@ -163,3 +163,29 @@
     font-size: 0.9rem;
   }
 }
+
+@media (max-width: 768px) {
+  .horarios {
+    padding-inline: 0.75rem;
+  }
+
+  .horarios-container > h2 {
+    margin-bottom: 2rem;
+  }
+
+  .schedule-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .schedule-item {
+    min-width: 0;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .horarios {
+    padding-inline: 0.5rem;
+  }
+}

@@ -139,3 +139,42 @@
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .staff {
+    padding-inline: 0.75rem;
+  }
+
+  .staff-container > h2 {
+    margin-bottom: 2rem;
+  }
+
+  .staff-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .staff-card {
+    min-width: 0;
+    box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.85);
+  }
+
+  .staff-info h3 {
+    font-size: clamp(1.4rem, 6vw, 1.7rem);
+    letter-spacing: 1px;
+  }
+}
+
+@media (max-width: 480px) {
+  .staff {
+    padding-inline: 0.5rem;
+  }
+
+  .staff-image {
+    height: 260px;
+  }
+
+  .staff-info {
+    padding: 1.25rem;
+  }
+}
